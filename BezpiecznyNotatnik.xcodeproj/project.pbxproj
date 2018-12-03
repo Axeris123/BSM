@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02B7A49AEF14004AEDB8F2D3 /* Pods_BezpiecznyNotatnik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9490D97624B2503EBC6F6F34 /* Pods_BezpiecznyNotatnik.framework */; };
+		DE0B86D821934F1700D780A1 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0B86D721934F1700D780A1 /* Message.storyboard */; };
+		DE0B86DA21935DFD00D780A1 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B86D921935DFD00D780A1 /* MessageViewController.swift */; };
+		DE0B86DC219362D100D780A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B86DB219362D100D780A1 /* LoginViewController.swift */; };
+		DE0B86DE2193631F00D780A1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0B86DD2193631F00D780A1 /* Login.storyboard */; };
+		DE0B86E2219379F000D780A1 /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B86E1219379F000D780A1 /* Locksmith.swift */; };
+		DE234B8B21931EA3000D1D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE234B8A21931EA3000D1D49 /* AppDelegate.swift */; };
+		DE234B8D21931EA3000D1D49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE234B8C21931EA3000D1D49 /* ViewController.swift */; };
+		DE234B9021931EA3000D1D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE234B8E21931EA3000D1D49 /* Main.storyboard */; };
+		DE234B9221931EA4000D1D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE234B9121931EA4000D1D49 /* Assets.xcassets */; };
+		DE234B9521931EA4000D1D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE234B9321931EA4000D1D49 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37E08BADD249179E233836D9 /* Pods-BezpiecznyNotatnik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BezpiecznyNotatnik.release.xcconfig"; path = "Pods/Target Support Files/Pods-BezpiecznyNotatnik/Pods-BezpiecznyNotatnik.release.xcconfig"; sourceTree = "<group>"; };
+		9490D97624B2503EBC6F6F34 /* Pods_BezpiecznyNotatnik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BezpiecznyNotatnik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E2A6E140721186CEEA54EB3 /* Pods-BezpiecznyNotatnik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BezpiecznyNotatnik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BezpiecznyNotatnik/Pods-BezpiecznyNotatnik.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0B86D721934F1700D780A1 /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		DE0B86D921935DFD00D780A1 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		DE0B86DB219362D100D780A1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DE0B86DD2193631F00D780A1 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		DE0B86E1219379F000D780A1 /* Locksmith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locksmith.swift; sourceTree = "<group>"; };
+		DE234B8721931EA3000D1D49 /* BezpiecznyNotatnik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BezpiecznyNotatnik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE234B8A21931EA3000D1D49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE234B8C21931EA3000D1D49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE234B8F21931EA3000D1D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE234B9121931EA4000D1D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE234B9421931EA4000D1D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE234B9621931EA4000D1D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE234B8421931EA3000D1D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B7A49AEF14004AEDB8F2D3 /* Pods_BezpiecznyNotatnik.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0620F6D5DF638A6A42B6F33F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A6E140721186CEEA54EB3 /* Pods-BezpiecznyNotatnik.debug.xcconfig */,
+				37E08BADD249179E233836D9 /* Pods-BezpiecznyNotatnik.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7467046D5336A52B859766C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9490D97624B2503EBC6F6F34 /* Pods_BezpiecznyNotatnik.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE234B7E21931EA3000D1D49 = {
+			isa = PBXGroup;
+			children = (
+				DE234B8921931EA3000D1D49 /* BezpiecznyNotatnik */,
+				DE234B8821931EA3000D1D49 /* Products */,
+				0620F6D5DF638A6A42B6F33F /* Pods */,
+				7467046D5336A52B859766C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE234B8821931EA3000D1D49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE234B8721931EA3000D1D49 /* BezpiecznyNotatnik.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE234B8921931EA3000D1D49 /* BezpiecznyNotatnik */ = {
+			isa = PBXGroup;
+			children = (
+				DE234B8A21931EA3000D1D49 /* AppDelegate.swift */,
+				DE234B8C21931EA3000D1D49 /* ViewController.swift */,
+				DE234B8E21931EA3000D1D49 /* Main.storyboard */,
+				DE234B9121931EA4000D1D49 /* Assets.xcassets */,
+				DE234B9321931EA4000D1D49 /* LaunchScreen.storyboard */,
+				DE234B9621931EA4000D1D49 /* Info.plist */,
+				DE0B86D721934F1700D780A1 /* Message.storyboard */,
+				DE0B86D921935DFD00D780A1 /* MessageViewController.swift */,
+				DE0B86DB219362D100D780A1 /* LoginViewController.swift */,
+				DE0B86DD2193631F00D780A1 /* Login.storyboard */,
+				DE0B86E1219379F000D780A1 /* Locksmith.swift */,
+			);
+			path = BezpiecznyNotatnik;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE234B8621931EA3000D1D49 /* BezpiecznyNotatnik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE234B9921931EA4000D1D49 /* Build configuration list for PBXNativeTarget "BezpiecznyNotatnik" */;
+			buildPhases = (
+				393299A29CFB723EBE9BC6BB /* [CP] Check Pods Manifest.lock */,
+				DE234B8321931EA3000D1D49 /* Sources */,
+				DE234B8421931EA3000D1D49 /* Frameworks */,
+				DE234B8521931EA3000D1D49 /* Resources */,
+				4ACEBB2BBF27C15E3435AA54 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BezpiecznyNotatnik;
+			productName = BezpiecznyNotatnik;
+			productReference = DE234B8721931EA3000D1D49 /* BezpiecznyNotatnik.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE234B7F21931EA3000D1D49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Axeris;
+				TargetAttributes = {
+					DE234B8621931EA3000D1D49 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = DE234B8221931EA3000D1D49 /* Build configuration list for PBXProject "BezpiecznyNotatnik" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE234B7E21931EA3000D1D49;
+			productRefGroup = DE234B8821931EA3000D1D49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE234B8621931EA3000D1D49 /* BezpiecznyNotatnik */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE234B8521931EA3000D1D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE234B9521931EA4000D1D49 /* LaunchScreen.storyboard in Resources */,
+				DE234B9221931EA4000D1D49 /* Assets.xcassets in Resources */,
+				DE0B86D821934F1700D780A1 /* Message.storyboard in Resources */,
+				DE0B86DE2193631F00D780A1 /* Login.storyboard in Resources */,
+				DE234B9021931EA3000D1D49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		393299A29CFB723EBE9BC6BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BezpiecznyNotatnik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ACEBB2BBF27C15E3435AA54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BezpiecznyNotatnik/Pods-BezpiecznyNotatnik-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BiometricAuthentication/BiometricAuthentication.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiometricAuthentication.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BezpiecznyNotatnik/Pods-BezpiecznyNotatnik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE234B8321931EA3000D1D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE0B86E2219379F000D780A1 /* Locksmith.swift in Sources */,
+				DE0B86DC219362D100D780A1 /* LoginViewController.swift in Sources */,
+				DE234B8D21931EA3000D1D49 /* ViewController.swift in Sources */,
+				DE0B86DA21935DFD00D780A1 /* MessageViewController.swift in Sources */,
+				DE234B8B21931EA3000D1D49 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE234B8E21931EA3000D1D49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE234B8F21931EA3000D1D49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE234B9321931EA4000D1D49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE234B9421931EA4000D1D49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE234B9721931EA4000D1D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE234B9821931EA4000D1D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE234B9A21931EA4000D1D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2A6E140721186CEEA54EB3 /* Pods-BezpiecznyNotatnik.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAZ6QYS3NM;
+				INFOPLIST_FILE = BezpiecznyNotatnik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = axeris.BezpiecznyNotatnik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE234B9B21931EA4000D1D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E08BADD249179E233836D9 /* Pods-BezpiecznyNotatnik.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAZ6QYS3NM;
+				INFOPLIST_FILE = BezpiecznyNotatnik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = axeris.BezpiecznyNotatnik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE234B8221931EA3000D1D49 /* Build configuration list for PBXProject "BezpiecznyNotatnik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE234B9721931EA4000D1D49 /* Debug */,
+				DE234B9821931EA4000D1D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE234B9921931EA4000D1D49 /* Build configuration list for PBXNativeTarget "BezpiecznyNotatnik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE234B9A21931EA4000D1D49 /* Debug */,
+				DE234B9B21931EA4000D1D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE234B7F21931EA3000D1D49 /* Project object */;
+}

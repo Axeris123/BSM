@@ -1,0 +1,24 @@
+PODS:
+  - BiometricAuthentication (2.1)
+  - CryptoSwift (0.12.0)
+  - KeychainSwift (12.0.0)
+
+DEPENDENCIES:
+  - BiometricAuthentication
+  - CryptoSwift
+  - KeychainSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BiometricAuthentication
+    - CryptoSwift
+    - KeychainSwift
+
+SPEC CHECKSUMS:
+  BiometricAuthentication: 6928c01583bc707f92c11349f190d5ae052217d3
+  CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
+  KeychainSwift: d5e776578587ee5958ce36601df22f168f65138a
+
+PODFILE CHECKSUM: 37d64f2d747871b40881d263f96b041e6c541be3
+
+COCOAPODS: 1.5.3
