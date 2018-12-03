@@ -38,6 +38,7 @@ class Locksmith{
             let encryptedPassword = try aes.encrypt(passwordToHash)
             
             keychain.set(salt, forKey: "salt")
+            keychain.set(Data(key), forKey: "key")
             keychain.set(Data(iv), forKey: "iv")
             keychain.set(Data(encryptedPassword), forKey: "password")
             
@@ -87,7 +88,6 @@ class Locksmith{
         let saltToHash: Array<UInt8> = Array(salt!.utf8)
         
         do{
-            
             let key = try PKCS5.PBKDF2(password: passwordToHash, salt: saltToHash, iterations: 4096, variant: .sha256).calculate()
             
             let aes = try AES(key: key, blockMode: GCM(iv: iv, mode: .combined))
@@ -95,10 +95,6 @@ class Locksmith{
             let encryptedPassword = try aes.encrypt(passwordToHash)
             
             if(encryptedPassword != hashedPassword!.bytes){
-                return false
-            }
-            
-            if(!faceIDAuth()){
                 return false
             }
      
@@ -111,7 +107,7 @@ class Locksmith{
         
     }
     
-    func faceIDAuth() -> Bool {
+    func faceIDLogin() -> Bool {
         let semaphore = DispatchSemaphore(value: 0)
         let localAuthenticationContext = LAContext()
         let reasonString = "To access the secure data"
@@ -124,7 +120,12 @@ class Locksmith{
         if localAuthenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
             
             localAuthenticationContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reasonString) { success, evaluateError in
-
+                let iv: Array<UInt8> = keychain.getData("iv")!.bytes
+                let key: Array<UInt8> = keychain.getData("key")!.bytes
+                
+                let aes = try! AES(key: key, blockMode: GCM(iv: iv, mode: .combined))
+                self.aes = aes
+                
                 result = success ? true : false
                 semaphore.signal()
             }

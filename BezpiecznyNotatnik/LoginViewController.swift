@@ -28,5 +28,16 @@ class LoginViewController: UIViewController {
         present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func loginFaceID(sender: UIButton){
+        if(!locksmith.faceIDLogin()){
+            return
+        }
+        
+        let storyboard = UIStoryboard(name: "Message", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MessageViewController") as! MessageViewController
+        
+        present(vc, animated: true, completion: nil)
+    }
+    
 
 }

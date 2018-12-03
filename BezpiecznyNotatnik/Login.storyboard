@@ -37,6 +37,7 @@
                                 <rect key="frame" x="67" y="433" width="252" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBO-sr-Anp">
@@ -47,6 +48,16 @@
                                 <state key="normal" title="Zatwierdź"/>
                                 <connections>
                                     <action selector="loginWithSender:" destination="gFV-16-4oV" eventType="touchUpInside" id="z1q-N4-kyS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppk-ig-bwK">
+                                <rect key="frame" x="98" y="591" width="191" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Zaloguj z Face ID"/>
+                                <connections>
+                                    <action selector="loginFaceIDWithSender:" destination="gFV-16-4oV" eventType="touchUpInside" id="EVX-TF-Og8"/>
                                 </connections>
                             </button>
                         </subviews>
