@@ -3,6 +3,7 @@ import KeychainSwift
 import CryptoSwift
 import LocalAuthentication
 
+
 let keychain = KeychainSwift()
 
 class Locksmith{
@@ -37,8 +38,11 @@ class Locksmith{
             
             let encryptedPassword = try aes.encrypt(passwordToHash)
             
+            let o = Obfuscator(withSalt: [AppDelegate.self, NSObject.self, NSString.self])
+            let keyBytes = o.bytesByObfuscatingString(string: String(bytes: key, encoding: .utf8)!)
+            
             keychain.set(salt, forKey: "salt")
-            keychain.set(Data(key), forKey: "key")
+            keychain.set(Data(keyBytes), forKey: "key")
             keychain.set(Data(iv), forKey: "iv")
             keychain.set(Data(encryptedPassword), forKey: "password")
             
@@ -121,7 +125,10 @@ class Locksmith{
             
             localAuthenticationContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reasonString) { success, evaluateError in
                 let iv: Array<UInt8> = keychain.getData("iv")!.bytes
-                let key: Array<UInt8> = keychain.getData("key")!.bytes
+                let keyBytes: Array<UInt8> = keychain.getData("key")!.bytes
+                
+                let o = Obfuscator(withSalt: [AppDelegate.self, NSObject.self, NSString.self])
+                let key: Array<UInt8> =  Array(o.reveal(key: keyBytes).utf8)
                 
                 let aes = try! AES(key: key, blockMode: GCM(iv: iv, mode: .combined))
                 self.aes = aes

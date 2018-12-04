@@ -18,6 +18,7 @@
 		DE234B9021931EA3000D1D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE234B8E21931EA3000D1D49 /* Main.storyboard */; };
 		DE234B9221931EA4000D1D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE234B9121931EA4000D1D49 /* Assets.xcassets */; };
 		DE234B9521931EA4000D1D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE234B9321931EA4000D1D49 /* LaunchScreen.storyboard */; };
+		DE80A64421B6D725002951A5 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A64321B6D725002951A5 /* Obfuscator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DE234B9121931EA4000D1D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE234B9421931EA4000D1D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE234B9621931EA4000D1D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE80A64321B6D725002951A5 /* Obfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				DE0B86DB219362D100D780A1 /* LoginViewController.swift */,
 				DE0B86DD2193631F00D780A1 /* Login.storyboard */,
 				DE0B86E1219379F000D780A1 /* Locksmith.swift */,
+				DE80A64321B6D725002951A5 /* Obfuscator.swift */,
 			);
 			path = BezpiecznyNotatnik;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				DE234B8D21931EA3000D1D49 /* ViewController.swift in Sources */,
 				DE0B86DA21935DFD00D780A1 /* MessageViewController.swift in Sources */,
 				DE234B8B21931EA3000D1D49 /* AppDelegate.swift in Sources */,
+				DE80A64421B6D725002951A5 /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
